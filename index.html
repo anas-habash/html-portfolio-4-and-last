@@ -7,9 +7,13 @@
     <title>ِِِِANAS's Porfolio</title>
 </head>
 <body>
-    <h1 id ="titleeo">soso's Porfolio</h1>
+    <h1 id ="titleeo">ANAS's's Porfolio</h1>
+
+    </table>
     <input type="button" onclick="hideTitle()" value="Kabseeh hide" id="btnHide"/>
     <input type="button" onclick="showtitle()" value="Kabseeh show" id="btnShow"/>
+    <input type="button" onclick="updateTitle()" value="Kabseeh Update" id="btnUpdate"/>
+    <input type="text" id="txtNewTitle" class="conte"/>
     <h2><a href="https://anas-habash.github.io/html-MovieRanking1/">Movie Ranking Project </a></h2>
     <a href="https://anas-habash.github.io/html-MovieRanking1/"><img src="./assets/images/Screenshot 2025-03-25 024630.png" height="200"></a>
     <br/>
@@ -29,5 +33,9 @@
     }
     function hideTitle() {
       document.getElementById("titleeo").style.display = "none";
+    }
+    function updateTitle() {
+     var x= document.getElementById("txtNewTitle").value;
+     document.getElementById("titleeo").innerText=x;
     }
   </script>
